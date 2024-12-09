@@ -1,11 +1,16 @@
 import sys
+import re
 
+
+# To open a file received as parameter of out script, we can use code like this one.
 logfile = sys.argv[1]
 with open(logfile) as f:
   for line in f:
     print(line.strip())
 
 
+# Remember that for performance reasons, when files are large, it's generally good pratices 
+# to read them line by line instead of loading the entire contents into memory.
 logfile = sys.argv[1]
 with open(logfile) as f:
   for line in f:
@@ -14,16 +19,7 @@ with open(logfile) as f:
     print(line.strip())
 
 
-import re
-pattern = r"USER \((\w+)\)$"
-line = "Jul 6 14:03:01 computer.name CRON[29440]: USER (naughty_user)"
-result = re.search(pattern, line)
-print(result[1])
-
-
-import re
-import sys
-
+# In this example, we'll use escape characters, capture groups, and the end of strings anchor.
 logfile = sys.argv[1]
 with open(logfile) as f:
   for line in f:
@@ -32,7 +28,3 @@ with open(logfile) as f:
     pattern = r"USER \((.+)\)$"
     result = re.search(pattern, line)
     print(result[1])
-
-
-chmod +x check_cron.py 
-./check_cron.py syslog 
