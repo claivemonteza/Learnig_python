@@ -1,4 +1,6 @@
 import unittest
+# Import a class
+from CakeFactory import CakeFactory 
 
 class TestCakeFactory(unittest.TestCase):
  def test_create_cake(self):

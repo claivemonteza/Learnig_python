@@ -1,0 +1,16 @@
+A variant of unit tests is our regression tests. They're usually written as part of a debugging and troubleshooting process to verify that an issue or error has been fixed once it's been identified.
+
+Regression tests are a useful part of a test suite because they ensure that the same mistake doesn't happen twice. The same bug can't be reintroduced into the code because introducing it will cause the regression test to fail. 
+
+Smoke tests, sometimes called build verification tests, get their name from a concept that comes from testing hardware equipment. 
+Plug in the given piece of hardware and see if smoke starts coming out of it. 
+When writing software smoke tests serve as a kind of sanity check to find major bugs in a program. 
+Smoke tests answer basic questions like, does the program run? These tests are usually run before more refined testing takes place. 
+Since if the software fails the smoke test you can be pretty sure none of the other tests will pass either.
+
+
+A process called test-driven development or TDD calls for creating the test before writing the code. 
+This might seem a bit counter-intuitive, but it can make for more thoughtful well-written programs.
+ When presented with a new problem that can be solved by automation, your gut instinct might be to fire up your code editor and start writing. 
+ But creating some tests first make sure that you've thought about the problem that you're trying to solve and some different approaches that you might use to accomplish it. 
+ Writing a test first also helps you think about the ways your program could fail and break which can lead to some valuable insights and even change the approach you take for the better.

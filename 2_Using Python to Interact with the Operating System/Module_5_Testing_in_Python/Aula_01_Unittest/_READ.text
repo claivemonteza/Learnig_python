@@ -1,0 +1,4 @@
+One pattern that you can use for unit tests is made up of three phases: arrange, act, and assert. 
+ARRANGE represents the preparation of the environment for testing; 
+ACT represents the action, or the objective of the test, performed; 
+ASSERT represents whether the results checked are expected or not. 
