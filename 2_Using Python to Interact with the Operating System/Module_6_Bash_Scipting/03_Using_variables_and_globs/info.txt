@@ -1,0 +1,21 @@
+When we write star dot py [*.py], 
+the shell turns it into a list containing all filenames that end with py in the current directory. 
+We can also put the star at the end of an expression to get a list of all files that start with a certain prefix.
+
+echo *.py
+
+
+c* allows us to get all the files in the current directory that start with c.
+
+echo c*
+
+
+The star with no prefix or suffix matches all the files in the current directory.
+
+echo *
+
+
+echo ?????.py
+The question mark symbol can be used to match exactly one character, instead of any amount of characters.
+We can repeat it as many times as we need. 
+In this example, we can get the Python files with five characters in their name by using five question marks together.
